@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Ensures proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Forces IE 8/9/10 to use its latest rendering engine -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Pixel Art Maker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <script src="js/iro.min.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="row">
+      <div class="column">
+        <div id="tools">
+          <a class="reset-button" value="reset">
+            <span class="tooltip">Reset</span>
+            <i class="fas fa-trash-alt"></i></a>
+          <a class="quick-fill" value="fill">
+            <span class="tooltip">Fill all squares</span>
+            <i class="fas fa-fill"></i></a>
+          <hr noshade color="white" size="1">
+          <i>tools</i>
+          <a class="erase-mode tool" value="erase">
+            <span class="tooltip">Erase</span>
+            <i class="fas fa-eraser"></i></a>
+          <a class="draw-mode tool active" value="draw">
+            <span class="tooltip">Draw</span>
+            <i class="fas fa-pencil-alt"></i></a>
+        </div>
+      </div>
+      <div class="column">
+        <table draggable="false" class="pixel-canvas"></table>
+      </div>
+      <div class="column">
+        <div id="color-picker"></div>
+        <form class="picker-functions" action="javascript:void(0)">
+          <input type="text" class="input" id="picker-input">
+          <button id="picker-button" class="input" type="submit">Ok</button>
+        </form>
+        <button class="run-sensehat" value="Run">Run</button>
+      </div>
+    </div>
+    <script src="js/grid.js"></script>
+</body>
+
+</html>
